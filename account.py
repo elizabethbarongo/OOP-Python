@@ -71,7 +71,7 @@ class Account:
 
 
 
-    def set_minimum_balance(self, amount):
+    def set_minimun_balance(self, amount):
         minimum_balance= 600
         if minimum_balance >= self.balance:
             return f"You can withdraw"
