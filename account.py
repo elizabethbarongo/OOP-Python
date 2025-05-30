@@ -69,14 +69,14 @@ class Account:
         interest = principal* rate * time
         return interest
 
-
-
-    def set_minimun_balance(self, amount):
-        minimum_balance= 600
-        if minimum_balance >= self.balance:
-            return f"You can withdraw"
+    def set_minimum_balance(self, amount):
+        min_amount = 300
+        if self.balance - amount >= min_amount:
+            self.balance -= amount
+            return self.balance
         else:
-            "You cannot withdraw "    
+            return f"You cannot withdraw if your balance is less than {min_amount}."
+        
 
 
     
