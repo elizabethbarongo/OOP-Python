@@ -93,15 +93,6 @@ class Account:
         print  (f"Account closed for {self.name}")
 
     
-    class  transaction:
-        def __init__(self,narration,amount,transaction_type)
-        self.date =datetime.now()
-        self.amount=amount  
-        self.narration =narration
-        self.transaction_type=transaction_type 
-        
-        
-       
 
 
    
